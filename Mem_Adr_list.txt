@@ -1,0 +1,14 @@
+Memory addresses to be considered for checksum calculation
+
+1)0xFD0200 ,  0xFD03FF // EOL1
+2)0xFD0400 ,  0xFD0400+1  //EOL2_pattern
+3)0xFD0406  , 0xFD09FF  // EOL2_DATA
+4)0xFD0400+2  , 0xFD0400+5 // Rec factor
+5)0xFD0A00 , 0xFD15FF    //CAL DATA
+6)0xFD1600 , 0xFD164F    // ASW header
+7)0xFD165C , 0xFF33FF    //ASW
+8)0xFF3800  , 0xFF39FF   //BB1CFG_BAK_SEG
+9)0xFF3A00 , 0xFF3A4F   // FBL_SEG
+10)0xFF3A50 , 0xFFF3FF   // FBLCODE
+11)0xFFFC00 , 0xFFFDFF   //BB1CFG_ORG
+12)0xFD0000+8, 0xFD0000+23 // CALID
